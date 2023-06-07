@@ -4,8 +4,8 @@
               The insertShiftArray function takes an array and a value as input and returns a new array with the value inserted at the middle index. It performs this operation without using any built-in methods provided by the programming language.
 
 ## Whiteboard Process
-![Page 1](https://i.ibb.co/GnB233s/Slide1.jpg)
-![Page 2](https://i.ibb.co/L816SLC/Slide2.jpg)
+![Page 1](https://i.ibb.co/m4NvyYV/Shift-Array.jpg)
+
 
 ## Approach & Efficiency
 1. Calculate the middle index of the original array to determine where the new value should be inserted.
