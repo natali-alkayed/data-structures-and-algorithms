@@ -24,7 +24,7 @@ function lower(str) {
 const updateAnimal = (arr, callback) => {
   const updatedAnimals = [];
 
-  arr.forEach(animal => {
+  arr.forEach((animal) => {
     const updatedAnimal = callback(animal);
     updatedAnimals.push(updatedAnimal);
   });
@@ -41,8 +41,9 @@ For example: 'Cat' would come before 'apple'
 ------------------------------------------------------------------------------------------------ */
 
 const sortNames = (arr) => {
-
+  return arr.sort();
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -56,6 +57,7 @@ const sortNumbers = (arr) => {
   return arr.sort((a, b) => a - b);
 };
 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -65,12 +67,9 @@ HINT: Do it with a custom sort callback, not with using `.reverse()`. ;)
 ------------------------------------------------------------------------------------------------ */
 
 const sortBackwards = (arr) => {
-  arr.sort(function(a, b) {
-    return b - a;
-  });
-  
-  return arr;
+  return arr.sort((a, b) => b - a);
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -83,8 +82,9 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetize = (arr) => {
-  
+  return arr.sort();
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -100,9 +100,9 @@ Here is an example of the input:
 ------------------------------------------------------------------------------------------------ */
 
 const sortByPrice = (arr) => {
-  arr.sort((a, b) => a.price - b.price);
-  return arr;
+  return arr.sort((a, b) => a.price - b.price);
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
@@ -237,7 +237,7 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return an array of names sorted alphabetically', () => {
     expect(sortNames(['able', 'Bob'])[0]).toStrictEqual('Bob');
   });
@@ -260,7 +260,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should sort strings alphabetically', () => {
     expect(alphabetize(['alphabet', 'Zebra', 'Alphabet', 'carrot'])).toStrictEqual([ 'Alphabet', 'Zebra', 'alphabet', 'carrot']);
     expect(alphabetize(['alphabet','Alphabet', 'carrot'])).toStrictEqual([ 'Alphabet', 'alphabet', 'carrot']);
