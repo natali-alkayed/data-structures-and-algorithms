@@ -41,9 +41,7 @@ For example: 'Cat' would come before 'apple'
 ------------------------------------------------------------------------------------------------ */
 
 const sortNames = (arr) => {
-  return arr.sort(function(a, b) {
-    return a.localeCompare(b, 'en', { caseFirst: 'upper' });
-  });
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -85,7 +83,7 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetize = (arr) => {
-  return arr.sort((a, b) => a.localeCompare(b, undefined, { caseFirst: 'upper' }));
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
