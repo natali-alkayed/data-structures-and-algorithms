@@ -15,7 +15,6 @@ ________________________________________________________________________________
 ## Whiteboard Process:
 
 ![image2](https://i.ibb.co/DDdY1X4/Whiteboard.jpg)
-
 ## Approach & Efficiency:
 To implement the Linked List class with the required methods, the following approach can be taken:
 
@@ -55,7 +54,6 @@ ________________________________________________________________________________
 4. [index.js](./index.js)
 
 ## teting image:
-
 ![image1](./tests.png)
 
 
