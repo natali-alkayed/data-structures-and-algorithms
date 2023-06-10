@@ -53,7 +53,7 @@ ________________________________________________________________________________
 3. [tests](./__tests__/linked-list.test.js)
 4. [index.js](./index.js)
 
-## teting image:
+## testing image:
 ![image1](./tests.png)
 
 
