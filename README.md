@@ -25,3 +25,4 @@ To run your tests
 1. [Array Reverse](./javascript/ArrayReverse/README.md)
 2. [insertShiftArray](./javascript/insertShiftArray/README.md)
 3. [Linkedd listd](./javascript/linked-list/README.md)
+4. [BinarySearch](./javascript/BinarySearch/README.md)
