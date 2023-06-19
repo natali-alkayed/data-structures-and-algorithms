@@ -13,7 +13,7 @@
 - The insertAfter method adds a new node with the given new value immediately after the first node that has the specified value. Similar to insertBefore, it searches for the target value starting from the head node. Once found, it creates a new node with the provided value and adjusts the references to insert it after the found node.
 __________________________________________________________________________________________________________
 ## Whiteboard Process
-![image](./7.jpeg)
+![image](./WB.jpeg)
 ___________________________________________________________________________________________________________
 ## Approach & Efficiency
 * append:
@@ -35,5 +35,5 @@ ________________________________________________________________________________
 - [index.js](./index.js)
 ___________________________________________________________________________________________________________
 ## Testing:
-![tests](./8.png)
+![tests](./tests.png)
 
