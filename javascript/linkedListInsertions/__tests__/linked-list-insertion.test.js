@@ -93,4 +93,43 @@ describe('LinkedList', () => {
       );
     });
   });
+//************************************************lab7**************************************************//
+describe('kth From End ', () => {
+  test("Where k is greater than the length of the linked list",()=>{
+    linkedList.append("a");
+    linkedList.append("b");
+    linkedList.append("c");
+    linkedList.append("d");
+    expect(linkedList.kthFromEnd(5)).toBeNull();
+  })
+  test("Where k and the length of the list are the same",()=>{
+    linkedList.append("a");
+    linkedList.append("b");
+    linkedList.append("c");
+    linkedList.append("d");
+    expect(linkedList.kthFromEnd(4)).toBe("a");
+  })
+  test("Where k is not a positive integer",()=>{
+    linkedList.append("a");
+    linkedList.append("b");
+    linkedList.append("c");
+    linkedList.append("d");
+    expect(linkedList.kthFromEnd(-1)).toBeNull();
+    expect(linkedList.kthFromEnd(0)).toBeNull();
+  })
+  test("Where the linked list is of a size 1",()=>{
+    linkedList.append("a");
+    expect(linkedList.kthFromEnd(1)).toBe("a");
+  })
+  test("Happy Path” where k is not at the end, but somewhere in the middle of the linked list",()=>{
+    linkedList.append(1);
+    linkedList.append(8);
+    linkedList.append(3);
+    linkedList.append(2);
+    expect(linkedList.kthFromEnd(2)).toBe(3);
+  })
+
+});
+//*****************************************************************************************************//
+
 });
