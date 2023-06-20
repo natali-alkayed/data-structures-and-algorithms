@@ -27,4 +27,4 @@ To run your tests
 3. [Linkedd listd](./javascript/linked-list/README.md)
 4. [BinarySearch](./javascript/BinarySearch/README.md)
 5. [Linked List insertion](./javascript/linkedListInsertions/README.md)
-
+6. [linked list kth](./javascript/linkedListKth/README.md)
