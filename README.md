@@ -29,3 +29,6 @@ To run your tests
 5. [Linked List insertion](./javascript/linkedListInsertions/README.md)
 
 6. [Linked List Kth](./javascript/linkedListKth/README1.md)
+7. [Linked List zip](./javascript/LinkedListZip/README.md)
+
+
