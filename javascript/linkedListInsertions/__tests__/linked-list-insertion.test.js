@@ -1,5 +1,6 @@
 const LinkedList = require("../lib/LinkedList");
 
+
 describe('LinkedList', () => {
   let linkedList;
 
@@ -93,4 +94,78 @@ describe('LinkedList', () => {
       );
     });
   });
-});
+
+
+  
+  describe('Linked List Zip', () => {
+    test('tow linked list have the same length', () => {
+      const LL1 = new LinkedList();
+      LL1.append(1);
+      LL1.append(2);
+      LL1.append(3);
+
+      const LL2 = new LinkedList();
+      LL2.append(4);
+      LL2.append(5);
+      LL2.append(6);
+
+      const Result = new LinkedList();
+
+      Result.append(1);
+      Result.append(4);
+      Result.append(2);
+      Result.append(5);
+      Result.append(3);
+      Result.append(6);
+
+      expect(LL1.LinkedListZip(LL1, LL2)).toEqual(Result);
+    
+    });
+
+    test('first linked list has more nodes than second linked list', () => {
+      const LL1 = new LinkedList();
+      LL1.append(1);
+      LL1.append(2);
+      LL1.append(3);
+
+      const LL2 = new LinkedList();
+      LL2.append(4);
+      LL2.append(5);
+    
+      const Result = new LinkedList();
+
+      Result.append(1);
+      Result.append(4);
+      Result.append(2);
+      Result.append(5);
+      Result.append(3);
+
+
+      expect(LL1.LinkedListZip(LL1, LL2)).toEqual(Result);
+    
+    });
+  
+  
+    test('second linked list has more nodes than first linked list', () => {
+      const LL1 = new LinkedList();
+      LL1.append(1);
+      LL1.append(2);
+      
+      const LL2 = new LinkedList();
+      LL2.append(4);
+      LL2.append(5);
+      LL1.append(3);
+
+      const Result = new LinkedList();
+
+      Result.append(1);
+      Result.append(4);
+      Result.append(2);
+      Result.append(5);
+      Result.append(3);
+
+
+      expect(LL1.LinkedListZip(LL1, LL2)).toEqual(Result);
+    
+    });});});
+
