@@ -1,7 +1,5 @@
  'use strict';
-
 const LinkedList = require("../lib/LinkedList");
-
 describe("LinkedList", () => {
   let myList;
 
