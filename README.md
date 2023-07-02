@@ -24,11 +24,12 @@ To run your tests
 
 1. [Array Reverse](./javascript/ArrayReverse/README.md)
 2. [insertShiftArray](./javascript/insertShiftArray/README.md)
-3. [Linkedd listd](./javascript/linked-list/README.md)
+3. [Linkedd listd](./javascript/linked-list/LinkedListInsertion/README.md)
 4. [BinarySearch](./javascript/BinarySearch/README.md)
-5. [Linked List insertion](./javascript/linkedListInsertions/README.md)
+5. [Linked List insertion](./javascript/linked-list/linkedListInsertions/README.md)
 
-6. [Linked List Kth](./javascript/linkedListKth/README1.md)
-7. [Linked List zip](./javascript/LinkedListZip/README.md)
+6. [Linked List Kth](./javascript/linked-list/linkedListKth/README1.md)
+7. [Linked List zip](./javascript/linked-list/LinkedListZip/README.md)
+8. [Stack and Queue](./javascript/linked-list/stackAndQueue/README.md)
 
 

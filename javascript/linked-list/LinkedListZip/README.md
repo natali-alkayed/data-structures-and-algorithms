@@ -17,8 +17,8 @@ Space Complexity: O(1). The space complexity is constant because the additional 
 Overall, the function provides an efficient solution to zip two linked lists together while minimizing additional space usage.
 
 ## Solution:
-1. [Node.js](../linkedListInsertions/lib/Node.js)
-2. [LinkedList.js](../linkedListInsertions/lib/LinkedList.js)
+1. [Node.js](../linked-list/LinkedListFunctions/Node.js)
+2. [LinkedList.js](../linked-list/LinkedListFunctions/LinkedList.js)
 3. [tests](../linkedListInsertions/__tests__/linked-list-insertion.test.js)
 ## Testing
 ![Page 1](./8.png)

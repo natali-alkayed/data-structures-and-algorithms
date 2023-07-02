@@ -9,8 +9,8 @@
 ## Approach & Efficiency
 - For the kthFromEnd(k) method, one approach is to use two pointers, fast and slow. Initially, both pointers point to the head of the linked list. We move the fast pointer k positions ahead of the slow pointer. Then we move both pointers together until the fast pointer reaches the end of the linked list. At this point, the slow pointer will be k positions from the tail, and we return the value of the node it is pointing to.
 ## Solution:
-1. [Node.js](../linkedListInsertions/lib/Node.js)
-2. [LinkedList.js](../linkedListInsertions/lib/LinkedList.js)
+1. [Node.js](../linked-list/LinkedListFunctions/Node.js)
+2. [LinkedList.js](../linked-list/LinkedListFunctions/LinkedList.js)
 3. [tests](../linkedListInsertions/__tests__/linked-list-insertion.test.js)
 ## Testing
 ![Page 1](./tests1.png)
