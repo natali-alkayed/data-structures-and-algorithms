@@ -31,5 +31,6 @@ To run your tests
 6. [Linked List Kth](./javascript/linked-list/linkedListKth/README1.md)
 7. [Linked List zip](./javascript/linked-list/LinkedListZip/README.md)
 8. [Stack and Queue](./javascript/linked-list/stackAndQueue/README.md)
+9. [Sudo Queuee](./javascript/StackAndQueue/PseudoQueue/README.md)
 
 
