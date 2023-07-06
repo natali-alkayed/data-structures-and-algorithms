@@ -32,7 +32,7 @@ Space Complexity: The space complexity for the PseudoQueue class is O(n), where 
 _________________________________________________________________________________________________________
 ## Solution:
 
-1. [LinkedList.js](./PseudoQueue.js)
+1. [psuduQueue.js](./PseudoQueue.js)
 2. [tests](./__test__/PseudoQueue.test.js)
 
 _ _ _
