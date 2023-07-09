@@ -33,3 +33,4 @@ To run your tests
 8. [Stack and Queue](./javascript/linked-list/stackAndQueue/README.md)
 9. [Sudo Queuee](./javascript/StackAndQueue/PseudoQueue/README.md)
 10. [Animal Shilter](./javascript/StackAndQueue/AnimalShelter/README.md)
+11. [stack-queue-brackets](./javascript/stackQueueBrackets/README.md)
