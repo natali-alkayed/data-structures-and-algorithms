@@ -1,5 +1,5 @@
-const  BinarySearchTree = require('../BinaryTree'); 
-const  Node = require('../Node'); 
+const  BinarySearchTree = require('./BinaryTree'); 
+const  Node = require('./Node'); 
 
 describe('Binary Search Tree', () => {
   let bst;
@@ -76,4 +76,56 @@ describe('Binary Search Tree', () => {
     expect(bst.contains(8)).toBe(false);
     expect(bst.contains(13)).toBe(false);
   });
+////////////////////////////////////////////////////////////////////////////////////////////////////
+  test('return the max value in the binary tree', () => {
+    const tow = new Node(2);
+    const seven = new Node(7);
+    const five = new Node(5);
+    const one = new Node(1);
+    const six = new Node(6);
+    const nine = new Node(9);
+
+    tow.left = seven;
+    tow.right = five;
+    seven.left = one;
+    seven.right = six;
+    five.left = nine;
+
+
+    bst.root = tow;
+
+    expect(bst.MaxValue()).toEqual(9);
+});
+
+test('return null for an empty tree', () => {
+    expect(bst.MaxValue()).toBeNull();
+  });
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+test('return values in breadth-first order', () => {
+  const bst = new BinarySearchTree();
+  const tow = new Node(2);
+  const seven = new Node(7);
+  const five = new Node(5);
+  const one = new Node(1);
+  const six = new Node(6);
+  const nine = new Node(9);
+  const three = new Node(3);
+  const elevn = new Node(11);
+  const four = new Node(4);
+
+  tow.left = seven;
+  tow.right = five;
+  seven.left = one;
+  seven.right = six;
+  five.left = nine;
+  six.left=three;
+  six.right=elevn;
+  nine.left=four;
+
+
+  bst.root = tow;
+
+
+  expect(bst.BreadthFirst()).toEqual([2,7,5,1,6,9,3,11,4]);
+});
 });
