@@ -25,9 +25,9 @@ The depth-first traversal methods (preOrder, inOrder, and postOrder) use recursi
 3. Both the add and contains methods have a space complexity of O(h) due to the recursive calls on the call stack.where h is the hight of the tree.
 _________________________________________________________________________________________________________
 ## Solution:
-1. [node.js](../Trees/Node.js)
-2. [BinaryTrees.js](../Trees/BinaryTree.js)
-3. [test.js](../Trees/__test__/trees.test.js)_________________________________________________________________________________________________________
+1. [node.js](../TreeCodes/Node.js)
+2. [BinaryTrees.js](../TreeCodes/BinaryTree.js)
+3. [test.js](../TreeCodes/__test__/trees.test.js)_________________________________________________________________________________________________________
 ## testing image:
 ![tests](./tests.png)
 
