@@ -25,9 +25,9 @@ ________________________________________________________________________________
 The efficiency of this approach is O(n), where n is the number of nodes in the binary tree
 _________________________________________________________________________________________________________
 ## Solution:
-1. [node.js](../Node.js)
-2. [Max methode.js](./MaxValue.js)
-3. [test.js](./Max.test.js)_________________________________________________________________________________________________________
+1. [node.js](../Trees/Node.js)
+2. [Max methode.js](../Trees/BinaryTree.js)
+3. [test.js](../Trees/__test__/trees.test.js)_________________________________________________________________________________________________________
 ## testing image:
 ![tests](./tests.png)
 
