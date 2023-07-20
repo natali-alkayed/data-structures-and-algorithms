@@ -20,9 +20,8 @@ ________________________________________________________________________________
 The efficiency of this approach is O(n), where n is the number of nodes in the binary tree
 _________________________________________________________________________________________________________
 ## Solution:
-1. [node.js](../TreeCodes/Node.js)
-2. [binary tree.js](../TreeCodes/BinaryTree.js)
-3. [test.js](../TreeCodes/tree.test.js)_________________________________________________________________________________________________________
+1. [BreadthFirst.js](./BreadthFirst.js)
+2. [test.js](../TreeCodes/tree.test.js)_________________________________________________________________________________________________________
 ## testing image:
 ![tests](./test.png)
 

@@ -106,25 +106,6 @@ class BinarySearchTree extends BinaryTree {
     return FindMaxValue(this.root, this.root.value);
 
   }
-
-  BreadthFirst() {
-    if (!this.root) {
-      return null;
-    }
-    let result = [];
-    let queue = [this.root];
-
-    while (queue.length > 0) {
-      let currentNode = queue.shift();
-      result.push(currentNode.value);
-
-      if (currentNode.left) queue.push(currentNode.left);
-      if (currentNode.right) queue.push(currentNode.right);
-
-    }
-    return result;
-  }
-
 }
 
 module.exports = BinaryTree;
