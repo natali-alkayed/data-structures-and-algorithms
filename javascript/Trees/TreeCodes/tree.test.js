@@ -1,5 +1,6 @@
 const  BinarySearchTree = require('./BinaryTree'); 
 const  Node = require('./Node'); 
+const BreadthFirst=require('../BreadthFirst/BreadthFirst')
 
 describe('Binary Search Tree', () => {
   let bst;
@@ -101,31 +102,29 @@ test('return null for an empty tree', () => {
     expect(bst.MaxValue()).toBeNull();
   });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-test('return values in breadth-first order', () => {
-  const bst = new BinarySearchTree();
-  const tow = new Node(2);
-  const seven = new Node(7);
-  const five = new Node(5);
-  const one = new Node(1);
-  const six = new Node(6);
-  const nine = new Node(9);
-  const three = new Node(3);
-  const elevn = new Node(11);
-  const four = new Node(4);
 
-  tow.left = seven;
-  tow.right = five;
-  seven.left = one;
-  seven.right = six;
-  five.left = nine;
-  six.left=three;
-  six.right=elevn;
-  nine.left=four;
+describe('breadthFirst', () => {
+  it('should return an empty array for an empty tree', () => {
+    expect(BreadthFirst(null)).toEqual("tree is empty");
+  });
 
+  it('should return the values in breadth-first order', () => {
+    const tree = {
+      value: 1,
+      left: {
+        value: 2,
+        left: { value: 4, left: null, right: null },
+        right: { value: 5, left: null, right: null },
+      },
+      right: {
+        value: 3,
+        left: { value: 6, left: null, right: null },
+        right: { value: 7, left: null, right: null },
+      },
+    };
+    const expected = [1, 2, 3, 4, 5, 6, 7];
+    expect(BreadthFirst(tree)).toEqual(expected);
+  });
 
-  bst.root = tow;
-
-
-  expect(bst.BreadthFirst()).toEqual([2,7,5,1,6,9,3,11,4]);
 });
 });
