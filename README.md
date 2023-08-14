@@ -38,3 +38,6 @@ To run your tests
 13. [Max value in binary tree](./javascript/Trees/MaxValue/README.md)
 14. [tree-breadth-first](./javascript/Trees/BreadthFirst/README.md)
 15. [tree-fizz-buzz](./javascript/Trees/FizzBuzz/README.md)
+__________________________________________________________________________________________
+
+16. [Insertion Sort](./javascript/Sorting/Insrtion/README.md)
