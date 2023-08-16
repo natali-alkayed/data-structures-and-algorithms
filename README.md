@@ -41,3 +41,4 @@ To run your tests
 __________________________________________________________________________________________
 
 16. [Insertion Sort](./javascript/Sorting/Insrtion/README.md)
+17. [Marging Sort](./javascript/Sorting/MargeSort/README.md)
