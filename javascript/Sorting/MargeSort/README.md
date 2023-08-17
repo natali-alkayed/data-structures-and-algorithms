@@ -94,9 +94,7 @@ ALGORITHM Mergesort(arr)
 
 ## Implementing Insertion Sort in JavaScript
 
-[insertion.js](./MargSort.js)
-
-![Alt text](https://i.ibb.co/8PKwXSw/image-1.png)
+[MargeSort.js](./MargSort.js)
 
 ## Testing for Accuracy
 [tests](../Sorting.test.js)
