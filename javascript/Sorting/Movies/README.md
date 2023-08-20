@@ -3,6 +3,6 @@ Part One: Sorting Movie Objects In this part of the challenge, you are tasked wi
 Part Two: Testing Comparator Functions In the second half of the challenge, your objective is to create tests for the sorting functions you wrote in Part One. This might involve adjusting your code if needed. You will directly call the comparator functions and make assertions to ensure they produce the expected results when given specific input. The goal is to thoroughly test the sorting logic and confirm that it works as intended.
 
 - [Movies.js](./movies.js)
-- [testing](./movies.test.js)
+- [testing](../Sorting.test.js)
 
-![Alt text](./Untitled.png)
+![Alt text](./Capture.PNG)
