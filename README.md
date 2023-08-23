@@ -43,3 +43,4 @@ ________________________________________________________________________________
 16. [Insertion Sort](./javascript/Sorting/Insrtion/README.md)
 17. [Marging Sort](./javascript/Sorting/MargeSort/README.md)
 18. [Sorting Movies](./javascript/Sorting/Movies/README.md)
+19. [Hash table](./javascript/HashTable/README.md)
