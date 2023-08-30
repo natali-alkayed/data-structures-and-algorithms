@@ -38,4 +38,22 @@ describe('Hashtable', () => {
         expect(ht.keys()).toEqual(expect.arrayContaining(['key1', 'key2', 'key3']));
     });
 
+
+
+
+    const RepeatedWord = require('../RepeatedWord/RepeatedWord'); 
+    describe('RepeatedWord function', () => {
+      it('should return the first repeated word in a sentence', () => {
+        const sentence = "This is a sample sentence. This is a sample.";
+        const repeatedWord = RepeatedWord(sentence);
+        expect(repeatedWord).toBe('This');
+      });
+    
+      it('should return null for a sentence with no repeated words', () => {
+        const sentence = "This is a unique sentence.";
+        const repeatedWord = RepeatedWord(sentence);
+        expect(repeatedWord).toBe(null);
+      });
+    });
+
 });
