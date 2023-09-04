@@ -46,3 +46,4 @@ ________________________________________________________________________________
 19. [Hash table](./javascript/HashMap/HashTable/README.md)
 20. [Repeated word ](./javascript/HashMap/RepeatedWord/README.md)
 21. [Find common values in 2 binary trees.](./javascript/TreeIntersection/README.md)
+22. [LEFT JOIN for 2 Hashmaps](./javascript/HashMap/LEFTJOINs//README.md)

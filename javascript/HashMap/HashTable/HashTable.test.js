@@ -55,5 +55,71 @@ describe('Hashtable', () => {
         expect(repeatedWord).toBe(null);
       });
     });
+///////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+describe('Left Join Hashmaps"', () => {
+    let hashtable;
+
+    beforeEach(() => {
+        hashtable = new Hashtable();
+        hashtable.set('diligent', 'employed');
+        hashtable.set('fond', 'enamored');
+        hashtable.set('guide', 'usher');
+        hashtable.set('outfit', 'garb');
+        hashtable.set('wrath', 'anger');
+    });
+
+    it('should perform a left join with antonyms', () => {
+        const antonymsHash = {
+            diligent: 'idle',
+            fond: 'averse',
+            guide: 'follow',
+            flow: 'jam',
+            wrath: 'delight',
+        };
+
+        const result = hashtable.leftJoin(antonymsHash);
+        result.sort((a, b) => a[0].localeCompare(b[0]));
+
+        expect(result).toEqual([
+            ['diligent', 'employed', 'idle'],
+            ['fond', 'enamored', 'averse'],
+            ['guide', 'usher', 'follow'],
+            ['outfit', 'garb', null],
+            ['wrath', 'anger', 'delight'],
+        ]);
+    });
+
+    it('should handle empty antonymsHash', () => {
+        const antonymsHash = {};
+
+        const result = hashtable.leftJoin(antonymsHash);
+        result.sort((a, b) => a[0].localeCompare(b[0]));
+        expect(result).toEqual([
+            ['diligent', 'employed', null],
+            ['fond', 'enamored', null],
+            ['guide', 'usher', null],
+            ['outfit', 'garb', null],
+            ['wrath', 'anger', null],
+        ]);
+    });
+
+    it('should handle antonymsHash with missing keys', () => {
+        const antonymsHash = {
+            diligent: 'idle',
+            guide: 'follow',
+        };
+
+        const result = hashtable.leftJoin(antonymsHash);
+        result.sort((a, b) => a[0].localeCompare(b[0]));
+        expect(result).toEqual([
+            ['diligent', 'employed', 'idle'],
+            ['fond', 'enamored', null],
+            ['guide', 'usher', 'follow'],
+            ['outfit', 'garb', null],
+            ['wrath', 'anger', null],
+        ]);
+    });
+});
 
 });
