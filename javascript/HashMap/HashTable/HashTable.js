@@ -64,6 +64,43 @@ class Hashtable {
         }
         return keys;
     }
-}
 
+
+
+//////////////////////////////////////////////////////
+leftJoin(antonymsHash) {
+    const result = [];
+
+    for (const key in this.buckets) {
+        const bucket = this.buckets[key];
+        for (const [key, synonym] of bucket) {
+            const antonym = antonymsHash[key] || null;
+            result.push([key, synonym, antonym]);
+        }
+    }
+
+    return result;
+}}
+
+
+const synonymsHashTable = new Hashtable();
+
+
+synonymsHashTable.set('diligent', 'employed');
+synonymsHashTable.set('fond', 'enamored');
+synonymsHashTable.set('guide', 'usher');
+
+const antonymsHash = {
+    diligent: 'idle',
+    fond: 'averse',
+    guide: 'follow',
+    flow: 'jam',
+    wrath: 'delight',
+};
+
+
+const result = synonymsHashTable.leftJoin(antonymsHash);
+
+console.log(result);
+/////////////////////////////////////////////////////////////////
 module.exports = Hashtable;
