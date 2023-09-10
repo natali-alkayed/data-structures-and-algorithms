@@ -50,6 +50,36 @@ class Graph {
     size() {
         return this.vertices.size;
     }
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+    breadthFirst(startNode) {
+        if (!this.vertices.has(startNode)) {
+            throw new Error('Start node does not exist in the graph.');
+        }
+
+        const visited = new Set();
+        const queue = [];
+        const result = [];
+
+        queue.push(startNode);
+        visited.add(startNode);
+
+        while (queue.length > 0) {
+            const currentVertex = queue.shift();
+            result.push(currentVertex.value);
+
+            for (const neighborEdge of this.getNeighbors(currentVertex)) {
+                const neighborVertex = neighborEdge.vertex;
+
+                if (!visited.has(neighborVertex)) {
+                    visited.add(neighborVertex);
+                    queue.push(neighborVertex);
+                }
+            }
+        }
+
+        return result;
+    }
+
 }
 
-module.exports = Graph;
+module.exports = {Graph,Vertex,Edge };
