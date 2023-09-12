@@ -49,3 +49,4 @@ ________________________________________________________________________________
 22. [LEFT JOIN for 2 Hashmaps](./javascript/HashMap/LEFTJOINs//README.md)
 23. [Graphs](./javascript/Graphs/README.md)
 24. [Breadth first](./javascript/Graphs/graph-breadth-first/README.md)
+25. [Graph Business Trip](./javascript/Graphs/graph-business-trip/README.md)
