@@ -1,4 +1,3 @@
-### Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be?
 
 ### Description:
 The code challenge involves implementing a function called businessTrip that takes a graph representing a route map of cities and an array of city names as input. The goal is to determine whether it's possible to travel from one city to another using direct flights and calculate the total cost of the trip if it's possible. If the trip is possible, the function returns the total cost; otherwise, it returns null.
