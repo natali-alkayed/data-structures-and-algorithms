@@ -79,7 +79,32 @@ class Graph {
 
         return result;
     }
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+depthFirst(startNode) {
+    if (!this.vertices.has(startNode)) {
+        throw new Error('Start node does not exist in the graph.');
+    }
 
+    const visited = new Set();
+    const result = [];
+
+    const dfs = (currentVertex) => {
+        visited.add(currentVertex);
+        result.push(currentVertex.value);
+
+        for (const neighborEdge of this.getNeighbors(currentVertex)) {
+            const neighborVertex = neighborEdge.vertex;
+            if (!visited.has(neighborVertex)) {
+                dfs(neighborVertex);
+            }
+        }
+    };
+
+    dfs(startNode);
+    console.log("Depth-First Traversal (Pre-order):", result);
+    return result;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 
 module.exports = {Graph,Vertex,Edge };

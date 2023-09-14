@@ -303,3 +303,38 @@ describe('businessTrip function', () => {
         expect(businessTrip(graph, ['City A', 'City D'])).toEqual(200);
     });
 });
+/////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+describe('depth first', () => {
+    let myGraph;
+  
+    beforeEach(() => {
+      myGraph = new Graph();
+    });
+
+it('should perform depth-first traversal starting from a node', () => {
+    const vertexA = myGraph.addVertex('A');
+    const vertexB = myGraph.addVertex('B');
+    const vertexC = myGraph.addVertex('C');
+    const vertexD = myGraph.addVertex('D');
+    const vertexE = myGraph.addVertex('E');
+    const vertexF = myGraph.addVertex('F');
+
+    myGraph.addEdge(vertexA, vertexB);
+    myGraph.addEdge(vertexA, vertexC);
+    myGraph.addEdge(vertexB, vertexD);
+    myGraph.addEdge(vertexB, vertexE);
+    myGraph.addEdge(vertexC, vertexF);
+
+    const result = myGraph.depthFirst(vertexA);
+    const expected = ['A', 'B', 'D', 'E', 'C', 'F'];
+
+    expect(result).toEqual(expected);
+  });
+
+  it('should throw an error for non-existent start node', () => {
+    expect(() => myGraph.depthFirst('NonExistentNode')).toThrowError(
+      'Start node does not exist in the graph.'
+    );
+  });});

@@ -50,3 +50,4 @@ ________________________________________________________________________________
 23. [Graphs](./javascript/Graphs/README.md)
 24. [Breadth first](./javascript/Graphs/graph-breadth-first/README.md)
 25. [Graph Business Trip](./javascript/Graphs/graph-business-trip/README.md)
+26. [Depth First](./javascript/Graphs/Depth-first/README.md)
